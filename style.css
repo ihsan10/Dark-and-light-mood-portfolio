@@ -1,8 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
 body {
     transition: 0.3s;
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    background-color: rgb(229, 236, 234);
+    font-family: 'Poppins', sans-serif;
+    color: rgb(57, 57, 57);
+}
+
+h1 {
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+.square h2 {
+    margin: 50px 0 10px 0;
+}
+
+p {
+    font-size: 20px;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(57, 57, 57);
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.dark a {
+    color: rgb(255, 255, 255);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(136, 136, 136);
+    padding: 100px 30px;
+}
+
+.dark footer {
+    background-color: rgb(28, 28, 28);
 }
 
 header {
@@ -60,4 +110,29 @@ header {
 .main-text {
     width: 50%;
     padding: 30px;
+}
+
+.square {
+    width: 98%;
+    margin: 1%;
+    height: 350px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.dark .square {
+    background-color: rgb(71, 71, 71);
+}
+
+.sub-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 970px) {
+    .square {
+        width: 48%;
+        margin: 1%;
+        height: 600px;}
+    
 }
